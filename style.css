@@ -1,50 +1,16 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f8fb;
-  margin: 0; padding: 20px;
-  color: #222;
-}
-h1 {
-  text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 18px;
-  color: #004a80;
-}
-.container {
-  max-width: 750px; margin: auto;
-  background: white; padding: 20px;
-  border-radius: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-label { font-weight: bold; margin-top: 12px; display: block; }
-input, select {
-  width: 100%; padding: 10px; margin-top: 6px;
-  border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;
-}
-button {
-  margin-top: 16px; padding: 12px;
-  background: #0078d4; color: white;
-  font-size: 1.05rem; border: none; border-radius: 8px;
-  cursor: pointer; width: 100%;
-}
-button:hover { background: #005fa3; }
-.card {
-  margin-top: 20px; padding: 16px;
-  border-radius: 10px; background: #f9fcff;
-  border: 1px solid #d5e7f8;
-}
-.result {
-  font-size: 1.2rem; font-weight: bold;
-  margin-bottom: 12px; color: #004a80;
-}
-.accept { color: green; font-weight: bold; }
-.reject { color: #b00020; font-weight: bold; }
-ul { margin: 6px 0 0 20px; }
-footer {
-  margin-top: 18px; font-size: 0.85rem; color: #555; text-align: center;
-}
-table {
-  border-collapse: collapse; margin-top: 10px; width: 100%;
-}
-table th, table td {
-  border: 1px solid #ccc; padding: 6px; text-align: center;
-}
+
+body { font-family: Arial,sans-serif; background:#f4f8fb; margin:0; padding:20px; color:#222; }
+h1 { text-align:center; color:#004a80; margin-bottom:18px; }
+.container { max-width:750px; margin:auto; background:white; padding:20px; border-radius:14px; box-shadow:0 4px 10px rgba(0,0,0,0.08); }
+label { font-weight:bold; margin-top:12px; display:block; }
+input, select { width:100%; padding:10px; margin-top:6px; border:1px solid #ccc; border-radius:6px; font-size:1rem; }
+button { margin-top:16px; padding:12px; background:#0078d4; color:white; font-size:1.05rem; border:none; border-radius:8px; cursor:pointer; width:100%; }
+button:hover { background:#005fa3; }
+.card { margin-top:20px; padding:16px; border-radius:10px; background:#f9fcff; border:1px solid #d5e7f8; }
+.result { font-size:1.2rem; font-weight:bold; margin-bottom:12px; color:#004a80; }
+.accept { color:green; font-weight:bold; }
+.reject { color:#b00020; font-weight:bold; }
+ul { margin:6px 0 0 20px; }
+footer { margin-top:18px; font-size:0.85rem; color:#555; text-align:center; }
+table { border-collapse:collapse; margin-top:10px; width:100%; }
+table th, table td { border:1px solid #ccc; padding:6px; text-align:center; }
