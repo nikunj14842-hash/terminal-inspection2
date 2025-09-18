@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sampling Calculator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sampling Calculator</h1>
+
+  <div class="container">
+    <form onsubmit="event.preventDefault(); calculate();">
+      <label>📦 Number of Carton Boxes</label>
+      <input id="boxes" type="number" min="1" value="100" required />
+
+      <label>🔢 Units per Box</label>
+      <input id="perBox" type="number" min="1" value="10" required />
+
+      <label>🏷️ Inspection Level</label>
+      <select id="inspLevel">
+        <option value="II" selected>Level II (default)</option>
+        <option value="I">Level I (less strict)</option>
+        <option value="III">Level III (more strict)</option>
+      </select>
+
+      <button type="submit">🚀 Calculate Sampling Plan</button>
+    </form>
+
+    <div id="output" class="card" style="display:none">
+      <div id="summary" class="result"></div>
+      <div id="details"></div>
+
+      <div class="card" id="defectEntry" style="display:none">
+        <h3>🧾 Enter Observed Defects</h3>
+        <label>Critical Defects</label>
+        <input type="number" id="critDef" value="0" min="0" />
+        <label>Major Defects</label>
+        <input type="number" id="majDef" value="0" min="0" />
+        <label>Minor Defects</label>
+        <input type="number" id="minDef" value="0" min="0" />
+        <button onclick="checkDefects()">✅ Check Acceptance</button>
+        <div id="defectResult" style="margin-top:12px;font-weight:bold;"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>📝 Defect Classification</h3>
+      <ul>
+        <li><b>Critical:</b> Unsafe/harmful → AQL 0.65% (usually <span class="reject">Ac=0</span>)</li>
+        <li><b>Major:</b> Affects usability → AQL 2.5%</li>
+        <li><b>Minor:</b> Cosmetic only → AQL 4.0%</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>Made by Nikunj Chand</footer>
+  <script src="script.js"></script>
+</body>
+</html>
